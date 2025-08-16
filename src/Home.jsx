@@ -442,7 +442,7 @@ const ProfileCircle = () => {
               href="https://www.linkedin.com/in/selva-bharath-p-953786353/?originalSubdomain=in"
               className="w-13 h-13 rounded-full border-1"
             >
-              <img src="../src/images/linkedin.png" alt="" className="p-2" />
+              <img src={linkedin} alt="" className="p-2" />
             </a>
           </div>
         </section>
@@ -531,7 +531,7 @@ const ProfileCircle = () => {
               </div>
               <div className="relative left-[50px] top-[100px]">
                 <h1 className="font-bold text-3xl p-5 mt-[-50px] ml-[-55px]">
-                  3 Year's Experience On Full Stack Web Developer
+                  3 Year's Experience On Full Stack <br/>Web Developer
                 </h1>
                 <div className="flex flex-col gap-4 text-gray-600 ml-[-35px]">
                   <h1>
@@ -550,9 +550,9 @@ const ProfileCircle = () => {
                   </h1>
 
                   <h1>
-                    🔧 Currently, I'm expanding my skill set into backend
-                    development to become a Full Stack <br />
-                    Developer. I'm actively learning technologies like:
+                    🔧 Currently, I'm expanding my skill set into backend<br/>
+                    development to become a Full Stack
+                    Developer. I'm actively<br/> learning technologies like:
                   </h1>
                   <ul className="list-disc pl-15 space-2">
                     <li className="mb-2">🟢 Node.js</li>
