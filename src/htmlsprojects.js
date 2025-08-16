@@ -1,6 +1,12 @@
+import task from "../src/images/tasklisthtml.jpg"
+import calculator from "../src/images/calculatorhtml.jpg"
+import cricket from "../src/images/crickethtml.jpg"
+import loading from "../src/images/loading.webp"
+
+
 const htmlprojects = [
   {
-    picture: "../src/images/tasklisthtml.jpg",
+    picture: task,
     time: "12 march 2023",
     name: "TASKS",
     subject:
@@ -9,7 +15,7 @@ const htmlprojects = [
       git:"https://github.com/Selva-Bharath/Tasks",
   },
   {
-    picture: "../src/images/calculatorhtml.jpg",
+    picture: calculator ,
     time: "28 may 2023",
     name: "CALCULATOR",
     subject:
@@ -19,7 +25,7 @@ const htmlprojects = [
 
   },
   {
-    picture: "../src/images/crickethtml.jpg",
+    picture: cricket,
     time: "3 july 2023",
     name: "CRICKETSCORE",
     subject:
@@ -29,7 +35,7 @@ const htmlprojects = [
 
   },
   {
-    picture: "../src/images/loading.webp",
+    picture: loading,
     time: "15 november 2023",
     name: "LOADING",
     subject: "⏳ Please wait while the page is loading... I'm using html,css with contain animation",

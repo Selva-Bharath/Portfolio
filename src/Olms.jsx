@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import close from "../src/images/close.png"
+import video from "../src/videos/olmsvideo.mp4"
+import github from "../src/images/github.png"
+import olms from "../src/images/olmsproject.png"
 
 const Olms = () => {
   const [project, setProject] = useState(false);
@@ -12,7 +16,7 @@ const Olms = () => {
             IT'S MY OLMS PROJECT
           </h1>
           <img
-              src="../src/images/close.png"
+              src={close}
               alt="close"
               className="w-5 absolute right-4 top-5 cursor-pointer"
               onClick={() => setProject(false)}
@@ -27,14 +31,14 @@ const Olms = () => {
                   <h1 className="text-md ml-3">Live At:  <span className="text-gray-500 text-md">Loading...</span></h1>
                 </div>
                       <div className=" w-40 h-6 border rounded-xl mt-2 ml-20">
-                    <a><img src="../src/images/github.png" alt="" className="w-4 mt-1 ml-3"/>
+                    <a><img src={github} alt="" className="w-4 mt-1 ml-3"/>
                     <p className="mt-[-20px] ml-10">Github Repo</p></a>
                     </div>
               </div>
 
               <div>
                 <video autoPlay className="w-125 h-80  ml-13 mt-10">
-                  <source src="../src/videos/olmsvideo.mp4" type="video/mp4"/>
+                  <source src={video} type="video/mp4"/>
                 </video>
               </div>
             </div>
@@ -60,14 +64,14 @@ const Olms = () => {
             IT'S MY OLMS PROJECT
           </h1>
           <img
-              src="../src/images/close.png"
+              src={close}
               alt="close"
               className="w-5 absolute right-4 top-5 cursor-pointer"
               onClick={() => setProject(false)}
             />
             <div className="flex flex-col">
               <div className="w-90 h-90 border ml-5 mt-5 bg-blue-100">
-                <img src="../src/images/olmsproject.png" alt="" className="w-80 ml-5 mt-5"/>
+                <img src={olms} alt="" className="w-80 ml-5 mt-5"/>
                 <h1 className="font-bold text-md mt-2 ml-3">OLMS</h1>
                 <h1 className="text-blue-500 ml-2 text-sm ">12 July 2025</h1>
                 <p className="text-sm ml-3 mt-3">Welcome to my first project using backend likes : Express, node.js, MongoDB create a project</p>
@@ -82,7 +86,7 @@ const Olms = () => {
 
               <div>
                 <video autoPlay className="w-95 h-80 ml-2 mt-10">
-                  <source src="../src/videos/olmsvideo.mp4" type="video/mp4" className="border"/>
+                  <source src={video} type="video/mp4" className="border"/>
                 </video>
               </div>
             </div>

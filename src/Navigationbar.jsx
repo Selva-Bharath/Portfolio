@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import Home from "../src/Home";
+import otp from '../src/images/OIP.webp'
+import menu from "../src/images/menu.png"
+import close from "../src/images/close.png"
 
 
 const Navigationbar = () => {
@@ -11,7 +14,7 @@ const Navigationbar = () => {
       <div className="min-w-screen h-15 bg-white shadow-bottom shadow-xl hidden lg:block">
         <div className="relative flex flex-col mr-30 top-[-25px]">
                     <div className="relative top-[35px] left-[35px]">
-            <img src="../src/images/OIP.webp" alt="" className="w-10 rounded-full"/>
+            <img src={otp} alt="" className="w-10 rounded-full"/>
           </div>
           <div className="relative font-bold text-black text-xl top-[2px] ml-20">
             <span className="text-blue-500">S</span>elva
@@ -34,7 +37,7 @@ const Navigationbar = () => {
         <div className="relative top-[23px] left-[60px] font-bold">
           <span className="text-blue-500">S</span>elva
           <div>         <div className="relative top-[-33px] left-[-45px]">
-            <img src="../src/images/OIP.webp" alt="" className="w-10 rounded-full shadow-2xl"/>
+            <img src={otp} alt="" className="w-10 rounded-full shadow-2xl"/>
           </div></div>
         </div>
 
@@ -42,7 +45,7 @@ const Navigationbar = () => {
   
         {!isMenu ? (
           <img
-            src="../src/images/menu.png"
+            src={menu}
             alt="menu"
             className="w-5 absolute right-8 top-3 z-10 cursor-pointer"
             onClick={() => setIsMenu(true)}
@@ -51,7 +54,7 @@ const Navigationbar = () => {
           <div className="fixed w-[160px] h-[280px] bg-white right-7 top-0 z-20 shadow-2xl border border-2 mt-2"
           onClick={() => setIsMenu(false)}>
             <img
-              src="../src/images/close.png"
+              src={close}
               alt="close"
               className="w-5 absolute right-1 top-3 cursor-pointer"
               

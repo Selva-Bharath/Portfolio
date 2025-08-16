@@ -9,6 +9,22 @@ import Olms from "./Olms";
 import Register from "./Register";
 import Contact from "./Contact";
 
+// home images
+
+import arrow from '../src/images/down-arrow.png'
+import facebook from "../src/images/facebook.png"
+import github from "../src/images/github.png"
+import downloadimage from "../src/images/download.png"
+import instagram from "../src/images/instagram.png"
+import linkedin from "../src/images/linkedin.png" 
+import homeimage from "../src/images/coder.png"
+import resume from "../public/Resume.pdf"
+
+// about images
+
+import profileimages from "../src/images/profile.jpg" 
+
+
 const ProfileCircle = () => {
   // ✅ ScrollReveal effect
   useEffect(() => {
@@ -60,19 +76,19 @@ const ProfileCircle = () => {
               >
                 Hire Me Now !{" "}
                 <img
-                  src="../src/images/down-arrow.png"
+                  src={arrow}
                   alt=""
                   className="w-10 relative top-[-30px] left-[120px]"
                 />
               </a>
               <a
-                href="./public/Resume.pdf"
+                href={resume}
                 download
                 className="w-50 h-15 bg-sky-200 border-1 relative top-[180px] left-[250px] p-4 rounded-md shadow-lg"
               >
                 Download Resume{" "}
                 <img
-                  src="../src/images/download.png"
+                  src={downloadimage}
                   alt=""
                   className="w-10 relative top-[-30px] left-[140px]"
                 />
@@ -83,30 +99,30 @@ const ProfileCircle = () => {
                 href="https://www.facebook.com/"
                 className="w-13 h-13 rounded-full border-1"
               >
-                <img src="../src/images/facebook.png" alt="" className="p-2" />
+                <img src={facebook} alt="" className="p-2" />
               </a>
               <a
                 href="https://github.com/Selva-Bharath"
                 className="w-13 h-13 rounded-full border-1"
               >
-                <img src="../src/images/github.png" alt="" className="p-2" />
+                <img src={github} alt="" className="p-2" />
               </a>
               <a
                 href="https://www.instagram.com/"
                 className="w-13 h-13 rounded-full border-1"
               >
-                <img src="../src/images/instagram.png" alt="" className="p-2" />
+                <img src={instagram} alt="" className="p-2" />
               </a>
               <a
                 href="https://www.linkedin.com/"
                 className="w-13 h-13 rounded-full border-1"
               >
-                <img src="../src/images/linkedin.png" alt="" className="p-2" />
+                <img src={linkedin} alt="" className="p-2" />
               </a>
             </div>
           </div>
           <div className="flex relative top-[-150px] left-[900px]">
-            <img src="../src/images/coder.png" alt="" className="w-80 h-80" />
+            <img src={homeimage} alt="" className="w-80 h-80" />
           </div>
         </section>
 
@@ -123,7 +139,7 @@ const ProfileCircle = () => {
                   {/* Profile Image */}
                   <div className="w-[280px] h-[280px] rounded-full overflow-hidden border-[6px] border-blue-100 shadow-xl  bg-white">
                     <img
-                      src="../src/images/profile.jpg" // 🔄 Replace with your image path
+                      src={profileimages} // 🔄 Replace with your image path
                       alt="Profile"
                       className="w-full h-full object-cover"
                     />
@@ -224,7 +240,7 @@ const ProfileCircle = () => {
                     <li className="mb-2">🌐 REST APIs</li>
                   </ul>
                   <a
-                    href="./public/Resume.pdf"
+                    href={resume}
                     download
                     className="w-50 h-12 bg-sky-200 border-1 relative  p-3 rounded-md shadow-lg"
                   >
@@ -343,6 +359,19 @@ const ProfileCircle = () => {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
       {/* Mobile Section */}
       <div className="block lg:hidden ml-[-180px]  mt-10 ">
         <section id="Home" className="reveal">
@@ -372,19 +401,19 @@ const ProfileCircle = () => {
             >
               Hire Me Now !{" "}
               <img
-                src="../src/images/down-arrow.png"
+                src={arrow}
                 alt=""
                 className="w-8 relative top-[-30px] left-[100px]"
               />
             </a>
             <a
-              href="./public/Resume.pdf"
+              href={resume}
               download
               className="w-45 h-15 bg-sky-200 border-1 relative top-[180px] left-[210px] p-4 pl-2 rounded-md shadow-lg"
             >
               Download Resume
               <img
-                src="../src/images/download.png"
+                src={downloadimage}
                 alt=""
                 className="w-7 relative top-[-25px] left-[135px]"
               />
@@ -395,19 +424,19 @@ const ProfileCircle = () => {
               href="https://www.facebook.com/people/Selva/pfbid02SZUjXEeaLXSdUgyAhfB82wPu2NGiHyKmwStxA1jqyEa2skZJWcvvJ7RHs5VGjVhJl/?rdid=3Chcg8npFKKTnxKR&share_url=https%253A%252F%252Fwww.facebook.com%252Fshare%252F17W7gtyACz%252F"
               className="w-13 h-13 rounded-full border-1"
             >
-              <img src="../src/images/facebook.png" alt="" className="p-2" />
+              <img src={facebook} alt="" className="p-2" />
             </a>
             <a
               href="https://github.com/Selva-Bharath"
               className="w-13 h-13 rounded-full border-1"
             >
-              <img src="../src/images/github.png" alt="" className="p-2" />
+              <img src={github} alt="" className="p-2" />
             </a>
             <a
               href="https://www.instagram.com/mr_minion_boy_?igsh=MTdxZm5lYWIwZzFnYw%3D%3D"
               className="w-13 h-13 rounded-full border-1"
             >
-              <img src="../src/images/instagram.png" alt="" className="p-2" />
+              <img src={instagram} alt="" className="p-2" />
             </a>
             <a
               href="https://www.linkedin.com/in/selva-bharath-p-953786353/?originalSubdomain=in"
@@ -431,7 +460,7 @@ const ProfileCircle = () => {
                   {/* Profile Image */}
                   <div className="w-[280px] h-[280px] rounded-full overflow-hidden border-[6px] border-blue-100 shadow-xl  bg-white">
                     <img
-                      src="../src/images/profile.jpg" // 🔄 Replace with your image path
+                      src={profileimages}  // 🔄 Replace with your image path
                       alt="Profile"
                       className="w-full h-full object-cover"
                     />
@@ -532,13 +561,13 @@ const ProfileCircle = () => {
                     <li className="mb-2">🌐 REST APIs</li>
                   </ul>
                   <a
-                    href="./public/Resume.pdf"
+                    href={resume}
                     download
                     className="w-50 h-12 bg-sky-200 border-1 relative  p-3 rounded-md shadow-lg ml-18 mb-10"
                   >
                     Download Resume{" "}
                     <img
-                      src="../src/images/download.png"
+                      src={downloadimage}
                       alt=""
                       className="w-8 relative top-[-30px] left-[140px]"
                     />
