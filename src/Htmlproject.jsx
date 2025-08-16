@@ -72,7 +72,7 @@ const Htmlproject = () => {
                     <p className="text-md mt-1 ml-1">Live At :
                     <a href={htmlproject.web} className="text-xs text-blue-600">{htmlproject.web}</a></p>
                     <div className=" w-40 h-6 border rounded-xl mt-3 ml-15">
-                    <a href={htmlproject.git} ><img src="../src/images/github.png" alt="" className="w-4 mt-1 ml-3"/>
+                    <a href={htmlproject.git} ><img src={github} alt="" className="w-4 mt-1 ml-3"/>
                     <p className="mt-[-20px] ml-10">Github Repo</p></a>
                     </div>
                 </div>
