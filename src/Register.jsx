@@ -34,7 +34,7 @@ const Register = () => {
 
               <div>
                 <video autoPlay className="w-125 h-80  ml-13 mt-10 hover:scale-x-150 hover:scale-y-150">
-                  <source src="../src/videos/olmsvideo.mp" type="video/mp4"/>
+                  <source src="../src/videos/waiting...mp4" type="video/mp4"/>
                 </video>
               </div>
             </div>
@@ -81,7 +81,7 @@ const Register = () => {
 
               <div>
                 <video autoPlay className="w-95 h-80 ml-2 mt-10">
-                  <source src="../src/videos/olmsvido.mp4" type="video/mp4" className="border"/>
+                  <source src="../src/videos/waiting...mp4" type="video/mp4" className="border"/>
                 </video>
               </div>
             </div>
