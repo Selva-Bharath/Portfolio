@@ -246,7 +246,7 @@ const ProfileCircle = () => {
                   >
                     Download Resume{" "}
                     <img
-                      src="../src/images/download.png"
+                      src={downloadimage}
                       alt=""
                       className="w-10 relative top-[-30px] left-[140px]"
                     />
